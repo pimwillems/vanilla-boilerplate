@@ -2,3 +2,42 @@ html,
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
+nav {
+  background-color: blue;
+  width:100%;
+  height: 56px;
+}
+
+.wrapper-main {
+  background-color: pink;
+  .holder {
+    width:100%;
+    display:flex;
+    @media screen and (max-width: 576px) {
+      flex-direction:column;
+    }
+    .sidebar {
+      width:25%;
+      height: 80vh; // Demo purposes
+      background-color: #555555;
+      @media screen and (max-width: 576px) {
+        width:100%;
+      }
+    }
+    .products {
+      width:75%;
+      height: 80vh; // Demo purposes
+      background-color: #b3d4fc;
+      @media screen and (max-width: 576px) {
+        width:100%;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin:auto;
+  width:100%;
+}
